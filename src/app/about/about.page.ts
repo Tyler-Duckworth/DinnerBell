@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router'
+import { Router } from '@angular/router';
 import { Platform } from '@ionic/angular';
 
 @Component({
@@ -9,16 +9,12 @@ import { Platform } from '@ionic/angular';
 })
 export class AboutPage implements OnInit {
   screenWidth: number;
-  constructor(
-    private router: Router,
-    private platform: Platform
-  ) { }
+  constructor(private router: Router, private platform: Platform) {}
 
   ngOnInit() {
     this.screenWidth = this.platform.width();
   }
   navigate() {
-    this.router.navigate(["/nav"]);
+    this.router.navigate(['/nav']);
   }
-
 }

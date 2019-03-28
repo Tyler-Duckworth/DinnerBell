@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-button slot="start" fill="clear" (click)="navigate()">
-        <mat-icon>menu</mat-icon>
+      <mat-icon>menu</mat-icon>
     </ion-button>
     <ion-title>About</ion-title>
   </ion-toolbar>
@@ -22,7 +22,6 @@
   <div>
     <!-- Section 1: DinnerBell logo, title, and desc
     "Uniting us over what we all share in common: food." -->
-
   </div>
   <div>
     <!-- Section 2: Vision 
@@ -54,24 +53,29 @@
   <ion-grid class="arrows" [hidden]="this.screenWidth < 576">
     <ion-row class="arrows-row" align-items-center justify-content-center>
       <ion-col class="left-arrow" justify-content-center align-self-center>
-          <mat-icon [inline]="true">keyboard_arrow_left</mat-icon>
+        <mat-icon [inline]="true">keyboard_arrow_left</mat-icon>
       </ion-col>
-      <ion-col class="right-arrow" align-self-end justify-content-center align-self-center>
-          <mat-icon [inline]="true">keyboard_arrow_right</mat-icon>
+      <ion-col
+        class="right-arrow"
+        align-self-end
+        justify-content-center
+        align-self-center
+      >
+        <mat-icon [inline]="true">keyboard_arrow_right</mat-icon>
       </ion-col>
     </ion-row>
   </ion-grid>
   <ion-slides pager="true" [options]="slideOpts">
-      <ion-slide>
-        <h1>Slide 1</h1>
-      </ion-slide>
-      <ion-slide>
-        <h1>Slide 2</h1>
-      </ion-slide>
-      <ion-slide>
-        <h1>Slide 3</h1>
-      </ion-slide>
-    </ion-slides>
+    <ion-slide>
+      <h1>Slide 1</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 2</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 3</h1>
+    </ion-slide>
+  </ion-slides>
   <div>
     <!-- Section 6: Creators
       Creators title
