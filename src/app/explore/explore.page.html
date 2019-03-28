@@ -23,7 +23,8 @@
     <!-- Search Bar (MD or Ionic) -->
     <mat-sidenav-container>
       <mat-sidenav #sidenav [mode]="control.value">
-        <div *ngIf="items.length > 0">
+        
+        <div *ngIf="items && items.length > 0">
           <ion-card
             *ngFor="let item of items"
             [routerLink]="['/details', item.payload.doc.id]"

@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
-import { Platform } from '@ionic/angular';
+import { Platform, IonSlides } from '@ionic/angular';
 
 @Component({
   selector: 'app-about',
@@ -8,6 +8,12 @@ import { Platform } from '@ionic/angular';
   styleUrls: ['./about.page.scss'],
 })
 export class AboutPage implements OnInit {
+  @ViewChild('slides') slides: IonSlides;
+  slideOpts = {
+    slidesPerView: 1.0,
+    spaceBetween: 0,
+    centeredSlides: true
+  };
   screenWidth: number;
   constructor(private router: Router, private platform: Platform) {}
 
@@ -17,4 +23,5 @@ export class AboutPage implements OnInit {
   navigate() {
     this.router.navigate(['/nav']);
   }
+  
 }

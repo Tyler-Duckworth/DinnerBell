@@ -6,6 +6,9 @@
   text-align: center;
   margin-top: 20px;
 }
+.item-native {
+  background: none;
+}
 
 .submit-btn {
   margin-top: 40px;
@@ -64,4 +67,8 @@ ion-grid {
   background-color: blue;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+ion-item {
+  --background: none;
 }

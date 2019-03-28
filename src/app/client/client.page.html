@@ -80,16 +80,16 @@
         ><mat-icon>add</mat-icon></ion-fab-button
       >
       <ion-fab-list side="top">
-        <button ion-fab class="plate">
+        <button ion-fab class="plate" [routerLink]="['/new-event']">
           <ion-fab-button size="small"
             ><ion-icon src="../../assets/imgs/plate.svg"></ion-icon
           ></ion-fab-button>
           <ion-label class="plate-label">Create Event</ion-label>
         </button>
-        <button ion-fab class="calendar">
-          <ion-fab-button size="small"
-            ><mat-icon>calendar_today</mat-icon></ion-fab-button
-          >
+        <button ion-fab class="calendar" [routerLink]="['/explore']">
+          <ion-fab-button size="small">
+            <mat-icon>calendar_today</mat-icon>
+          </ion-fab-button>
           <ion-label>Join Event</ion-label>
         </button>
       </ion-fab-list>

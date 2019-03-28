@@ -37,14 +37,13 @@
         [formGroup]="validations_form"
         (ngSubmit)="tryLogin(validations_form.value)"
       >
-        <h1>Login</h1>
+        <h1>Log In</h1>
         <ion-item class="email" lines="inset">
           <ion-label position="floating" color="secondary">Email</ion-label>
           <ion-input
             class="input"
             type="text"
             formControlName="email"
-            (click)="clickField()"
           ></ion-input>
         </ion-item>
         <div class="validation-errors">
@@ -63,7 +62,6 @@
             class="input"
             type="password"
             formControlName="password"
-            (click)="clickFieldTwo()"
           ></ion-input>
         </ion-item>
         <div class="validation-errors">
