@@ -1,20 +1,38 @@
 h1 {
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Mermaid', serif;
 }
 .mat-display-3 {
+    width: 180px;
     margin-bottom: 3%;
     margin-left:-5%;
-    //text-align: center;
+    background: linear-gradient(
+        to bottom, #afc74d 0,
+        #afc74d 100%
+    );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    transition: background-size .5s, color .5s;
+}
+.mat-display-3:hover {
+    background-size: 4px 100px;
+    color: #b9b9b9;
+}
+.account-long {
+    width:275px;
 }
 .nav {
     display: inline !important;
 }
 .mat-title {
     font-family: 'Lato', sans-serif;
-    //text-align: center;
+    color: #363636;
 }
 ion-grid {
     height: 100%;
+}
+ion-row {
+    height:100%;
 }
 .email {
     text-align: center;
@@ -22,19 +40,21 @@ ion-grid {
 }
 .contact {
     text-align: center;
-    padding-bottom: 20%;
 }
 @media only screen and (max-width: 600px) {
     .mat-display-3 {
         width: auto;
-        margin-bottom:30px;
     }
 }
-@media only screen and (min-height: 740px) {
-    .contact {
-        padding-bottom: 15%;
-    }
-    .nav {
-        padding-top:15%;
-    }
+// .nav {
+//     background-color:white;
+// }
+.links {
+    height:90%;
+}
+.sign-out {
+    color: red;
+}
+.switch {
+    color: white;
 }

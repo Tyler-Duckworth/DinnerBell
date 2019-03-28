@@ -22,25 +22,26 @@
   <div>
     <!-- Section 1: DinnerBell logo, title, and desc
     "Uniting us over what we all share in common: food." -->
+
   </div>
   <div>
     <!-- Section 2: Vision 
       Vision Title
-      Eye with utensils in it (animated)
+      Eye with utensils in it (animated) - PHOTO - Coffee Cups at table
       "DinnerBell is a dynamic web application designed to create events to share food"
       (Improve Quote)
     -->
   </div>
   <div>
     <!-- Section 3: Location
-      Location Title
+      Location Title - PHOTO - tacks on map
       Some mash up of food and geography
       "We cater to you events that are near you without showing your exact location" -->
   </div>
   <div>
     <!-- Section 4: Usability
       Usability Title
-      Phone and Computer Mockup
+      Phone and Computer Mockup MockUPhone
       Spheal about mobile-first and application -->
   </div>
   <div>
@@ -50,6 +51,27 @@
       Spheal about libraries we used and how we used them.
     -->
   </div>
+  <ion-grid class="arrows" [hidden]="this.screenWidth < 576">
+    <ion-row class="arrows-row" align-items-center justify-content-center>
+      <ion-col class="left-arrow" justify-content-center align-self-center>
+          <mat-icon [inline]="true">keyboard_arrow_left</mat-icon>
+      </ion-col>
+      <ion-col class="right-arrow" align-self-end justify-content-center align-self-center>
+          <mat-icon [inline]="true">keyboard_arrow_right</mat-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-slides pager="true" [options]="slideOpts">
+      <ion-slide>
+        <h1>Slide 1</h1>
+      </ion-slide>
+      <ion-slide>
+        <h1>Slide 2</h1>
+      </ion-slide>
+      <ion-slide>
+        <h1>Slide 3</h1>
+      </ion-slide>
+    </ion-slides>
   <div>
     <!-- Section 6: Creators
       Creators title

@@ -20,7 +20,7 @@
 <ion-content *ngIf="items" class="list-mini-content" padding>
   <ion-grid class="list-mini">
     <!-- Iterate through list of events user has created. -->
-    <h1>Hosted Events:</h1>
+    <h1 class="sec-title">Hosted Events:</h1>
     <div *ngIf="items.length > 0">
       <ion-row *ngFor="let item of items">
         <ion-card *ngFor="let item of items" [routerLink]="['/details', item.payload.doc.id]">
@@ -29,7 +29,7 @@
             <ion-card-title>{{item.payload.doc.data().title}}</ion-card-title>
           </ion-card-header>
           <ion-card-content>
-            <ion-button fill="clear" slot="end">Details</ion-button>
+            <ion-button fill="clear" class="details" slot="end">Details</ion-button>
           </ion-card-content>
         </ion-card>
       </ion-row>
@@ -37,7 +37,7 @@
     <p *ngIf="items.length == 0" class="empty-list">Hmmm... It looks like you haven't created any events...</p>
 
     <!-- Iterate through list of events user has signed up for. -->
-    <h1>Joined Events:</h1>
+    <h1 class="sec-title">Joined Events:</h1>
     <div *ngIf="items.length > 0">
       <ion-row *ngFor="let item of items">
           <ion-card *ngFor="let item of items" [routerLink]="['/details', item.payload.doc.id]">
@@ -46,7 +46,7 @@
               <ion-card-title>{{item.payload.doc.data().title}}</ion-card-title>
             </ion-card-header>
             <ion-card-content>
-              <ion-button fill="clear" slot="end">Details</ion-button>
+              <ion-button fill="clear" class="details" slot="end">Details</ion-button>
             </ion-card-content>
           </ion-card>
         </ion-row>
@@ -64,7 +64,7 @@
 <ion-footer>
   <div class="footer">
     <ion-fab vertical="bottom" horizontal="end">
-        <ion-fab-button><mat-icon>add</mat-icon></ion-fab-button>
+        <ion-fab-button class="add" color="secondary"><mat-icon>add</mat-icon></ion-fab-button>
         <ion-fab-list side="top">
           
           <button ion-fab class="plate">
