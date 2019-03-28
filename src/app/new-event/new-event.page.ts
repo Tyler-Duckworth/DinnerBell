@@ -52,7 +52,8 @@ export class NewEventPage implements OnInit {
       location: value.location,
       image: this.image,
     };
-    this.firebaseService.createEvent(data).then(res => {
+    this.firebaseService.createUserEvent(data)
+    this.firebaseService.createGlobalEvent(data).then(res => {
       this.router.navigate(['/client']);
     });
   }

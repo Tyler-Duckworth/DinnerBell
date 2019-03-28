@@ -7,6 +7,6 @@ export class ClientResolver implements Resolve<any> {
   constructor(private firebaseService: FirebaseService) {}
 
   resolve() {
-    return this.firebaseService.getEvents();
+    return this.firebaseService.getUserEvents();
   }
 }
